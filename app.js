@@ -7,7 +7,7 @@ let kmTotali = prompt("Inserisci i Km") * prezzoPerKm
 //sconto
 
 const anni18 = 20 / 100
-const anni65 = kmTotali * 40/ 100
+const anni65 = 40 / 100
 
 //approssimazione
 
@@ -16,13 +16,13 @@ kmTotali = Math.floor(kmTotali)
 //nosconto
 
 if(etaUtente < 19){
-    kmTotali * anni18
+    let pagamento = kmTotali * anni18
 
-    console.log('Il prezzo da pagare è ' + kmTotali )
+    console.log('Il prezzo da pagare è ' + pagamento )
 }   else if(etaUtente > 64){
-    kmTotali * anni65
+    let pagamento = kmTotali * anni65
 
-    console.log('Il prezzo da pagare è ' + kmTotali)
+    console.log('Il prezzo da pagare è ' + pagamento)
 }   else {
     console.log(kmTotali)
 }
